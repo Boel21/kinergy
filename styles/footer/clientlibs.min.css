@@ -1,0 +1,620 @@
+@charset "UTF-8";.gns {
+    background: #f5f5f5;
+    padding: 9rem 0;
+    display: flex;
+    flex-direction: column
+}
+
+.gns.mgt {
+    margin-top: 4rem
+}
+
+.gns.mgb {
+    margin-bottom: 4rem
+}
+
+.gns.bg-white {
+    background: #fff
+}
+
+.gns.bg-black {
+    background: #000
+}
+
+.gns.bg-black .title {
+    color: #fff
+}
+
+.gns.bg-black .description {
+    color: #fff
+}
+
+.gns .title {
+    width: 100%;
+    padding: 0 6rem;
+    font-size: 4.8rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 5.6rem;
+    text-align: center
+}
+
+.gns .description {
+    width: 100%;
+    padding: 0 6rem;
+    margin-top: .8rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    letter-spacing: -0.01em;
+    text-align: center;
+    font-weight: 300
+}
+
+.gns .gns-input {
+    width: 78.6rem;
+    height: 6rem;
+    border-radius: 3.2rem;
+    border: 3px solid #000;
+    margin: 5rem auto 0;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    background: #fff
+}
+
+.gns .gns-input input[type=text] {
+    width: 100%;
+    height: 100%;
+    padding: 0 4rem;
+    font-size: 1.8rem;
+    letter-spacing: -0.015em;
+    background: transparent;
+    font-weight: 400;
+    font-family: "Hankook","HankookMain",sans-serif
+}
+
+.gns .gns-input input[type=text]:focus {
+    outline: 0
+}
+
+.gns .gns-input input[type=text]::placeholder {
+    color: #000
+}
+
+.gns .gns-input label {
+    display: none
+}
+
+.gns .gns-input button {
+    min-width: 13.6rem;
+    height: 4rem;
+    padding: 0 2.4rem;
+    background: #000;
+    border-radius: 2.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
+    font-weight: 300;
+    color: #fff;
+    flex-shrink: 0
+}
+
+.gns .gns-input button:after {
+    content: "";
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-left: 1.3rem;
+    display: flex
+}
+
+.gns.en .gns-input input[type=text] {
+    font-family: "HankookMain","Hankook",sans-serif
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner {
+    width: 64rem;
+    padding: 6.6rem 3.4rem 4rem;
+    overflow-y: auto
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .pop_con {
+    padding: 0
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .pop_title {
+    margin-bottom: 2.4rem
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .pop_title .font_contents_title_2 {
+    font-weight: 600;
+    line-height: 3.6rem
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .description {
+    letter-spacing: -0.03em;
+    margin-bottom: 4rem;
+    padding-bottom: 0
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .popup_email_box {
+    position: relative;
+    border-bottom: 1px solid #aaa
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .popup_email_box:after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background: #000;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transition: width .5s;
+    display: flex
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .popup_email_box:hover:after {
+    width: 100%;
+    transition: width .5s
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .popup_email_box input {
+    width: 100%;
+    height: 4.8rem;
+    position: relative;
+    background: transparent;
+    border-radius: 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .popup_email_box input:focus {
+    outline: 0
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .popup_email_box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    letter-spacing: -0.05rem;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    font-weight: 500
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .popup_email_box label:after {
+    content: "*";
+    display: flex;
+    color: red;
+    font-size: 1.4rem;
+    margin-left: .6rem
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .popup_email_box input:valid+label {
+    display: none
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .Validation {
+    display: none;
+    margin-top: .8rem;
+    font-size: 1.2rem;
+    text-align: left;
+    color: #c92a1d;
+    padding-bottom: 0;
+    line-height: inherit;
+    letter-spacing: 0
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .Validation.show {
+    display: block
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .Validation.emailValidationFooter {
+    flex-direction: column
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .Validation.emailValidationFooter:before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #c92a1d;
+    position: relative;
+    top: -0.9rem;
+    left: 0;
+    transition: width .5s;
+    display: flex
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .Validation.checkVali {
+    padding-left: calc(1.4rem + 25px)
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box {
+    margin-top: 1.6rem
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .btn {
+    font-size: 1.6rem;
+    letter-spacing: -0.005em;
+    color: #aaa;
+    font-weight: 400;
+    display: flex;
+    align-items: center
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .btn:after {
+    content: "*";
+    display: flex;
+    color: red;
+    font-size: 1.4rem;
+    margin-left: .6rem
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .btn.selected {
+    color: #000
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .btn.selected:after {
+    display: none
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .drop-box {
+    max-height: 22rem
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .drop-box .drop-search-box {
+    width: calc(100% - 4rem);
+    max-width: 43.2rem;
+    height: 5.6rem;
+    margin: 2rem auto 1.4rem;
+    position: relative
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .drop-box .drop-search-box input {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #000;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+    padding-left: 4.8rem;
+    background: 0;
+    border-radius: 0
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .drop-box .drop-search-box input::placeholder {
+    font-weight: 500;
+    letter-spacing: -0.005em;
+    color: #aaa
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .drop-box .drop-search-box input:focus {
+    outline: 0
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .drop-box .drop-search-box::before {
+    content: "";
+    width: 4rem;
+    height: 4rem;
+    background: rgba(0,0,0,0.06) url("../../../../../../../etc.clientlibs/hankooktire/clientlibs/clientlib-base/resources/img/common/search-up.svg");
+    display: flex;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%)
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .drop-box .drop-search-box+button {
+    margin-top: 0;
+    min-height: 3.6rem
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .drop-box button {
+    text-align: center;
+    padding: 0
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .select-box .drop-box .drop-search-noresultFooter {
+    height: 4.2rem;
+    font-size: 1.4rem;
+    padding: 0;
+    font-weight: 500;
+    color: #666;
+    font-family: "Hankook";
+    line-height: 2.2rem;
+    display: none
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .checkbox {
+    width: 100%;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    padding-bottom: 0
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .checkbox>label {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    letter-spacing: -0.005rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    color: #666;
+    outline: 0
+}
+
+#popup_wrapper .Subscribe_popFooter .pop_inner .sub-btn {
+    margin-top: 3.2rem
+}
+
+#popup_wrapper .popup_submittedFooter .pop_inner,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner,#popup_wrapper .popup_submission_failedFooter .pop_inner {
+    width: 50rem;
+    border: 1px solid #bbb;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4)
+}
+
+#popup_wrapper .popup_submittedFooter .pop_inner .pop_con,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con {
+    padding: 1rem 2.4rem 3.6rem
+}
+
+#popup_wrapper .popup_submittedFooter .pop_inner .pop_con .pop_title,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .pop_title,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .pop_title {
+    margin-bottom: 3.2rem
+}
+
+#popup_wrapper .popup_submittedFooter .pop_inner .pop_con .pop_title h3.font_contents_title_2,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .pop_title h3.font_contents_title_2,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .pop_title h3.font_contents_title_2 {
+    font-weight: 600
+}
+
+#popup_wrapper .popup_submittedFooter .pop_inner .pop_con .description,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .description,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .description {
+    margin-bottom: 3.2rem
+}
+
+#popup_wrapper .popup_submittedFooter .pop_inner .pop_con .description span,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .description span,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .description span {
+    font-weight: 600
+}
+
+#popup_wrapper .popup_submittedFooter .pop_inner .pop_con .share_btn,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .share_btn,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .share_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+    padding: 0;
+    cursor: pointer
+}
+
+#popup_wrapper .popup_submittedFooter .pop_inner .pop_con .share_btn::after,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .share_btn::after,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .share_btn::after {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    background: url("../../../../../../../etc.clientlibs/hankooktire/clientlibs/clientlib-base/resources/img/common/icon_share.svg");
+    background-size: contain;
+    display: flex;
+    margin-left: .6rem
+}
+
+#popup_wrapper .popup_submittedFooter .pop_inner .pop_con .share_txt,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .share_txt,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .share_txt {
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: -0.005em;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+    padding: 0
+}
+
+#popup_wrapper .popup_submittedFooter .pop_inner .pop_con .share_txt_complete,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .share_txt_complete,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .share_txt_complete {
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: -0.005em;
+    line-height: 2rem;
+    margin-bottom: 4rem;
+    color: #db5200;
+    display: none;
+    padding: 0
+}
+
+@media all and (max-width: 1024px) {
+    .gns.mgt {
+        margin-top:8.8rem
+    }
+
+    .gns.mgb {
+        margin-bottom: 8.8rem
+    }
+
+    .gns .title {
+        font-size: 3.8rem;
+        padding: 0 3.2rem
+    }
+
+    .gns .description {
+        padding: 0 3.2rem;
+        letter-spacing: -0.015em;
+        line-height: 3.8rem
+    }
+
+    .gns .gns-input {
+        width: 56rem;
+        margin: 5.3rem auto 0
+    }
+
+    .gns .gns-input input[type=text] {
+        letter-spacing: -0.01em
+    }
+
+    #popup_wrapper .Subscribe_popFooter .pop_inner .pop_title .font_contents_title_2 {
+        font-size: 2.8rem;
+        letter-spacing: -0.01em
+    }
+
+    #popup_wrapper .Subscribe_popFooter .pop_inner .description {
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 3rem
+    }
+}
+
+@media all and (max-width: 767px) {
+    .gns {
+        padding:7.2rem 0
+    }
+
+    .gns.mgt {
+        margin-top: 4rem
+    }
+
+    .gns.mgb {
+        margin-bottom: 4rem
+    }
+
+    .gns .title {
+        font-size: 2.8rem;
+        padding: 0 2rem;
+        line-height: 3.6rem
+    }
+
+    .gns .description {
+        margin-top: 1.2rem;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        padding: 0 2rem
+    }
+
+    .gns .gns-input {
+        width: 100%;
+        min-width: auto;
+        height: auto;
+        margin: 3.2rem auto 0;
+        border: 0;
+        flex-direction: column;
+        background: transparent
+    }
+
+    .gns .gns-input input[type=text] {
+        width: 100%;
+        height: 4.8rem;
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 2.4rem;
+        padding: 0 3rem;
+        background: #fff;
+        border-radius: 3.2rem;
+        border: 3px solid #000
+    }
+
+    .gns .gns-input button {
+        margin: 0 auto
+    }
+
+    #popup_wrapper .Subscribe_popFooter .pop_inner {
+        width: calc(100% - 4rem);
+        max-width: 39rem;
+        padding: 5rem 2.4rem 5.6rem
+    }
+
+    #popup_wrapper .Subscribe_popFooter .pop_inner .pop_con {
+        padding: 0
+    }
+
+    #popup_wrapper .Subscribe_popFooter .pop_inner .pop_title {
+        margin-bottom: 2rem;
+        margin-top: 2rem
+    }
+
+    #popup_wrapper .Subscribe_popFooter .pop_inner .pop_title .font_contents_title_2 {
+        font-size: 1.8rem;
+        line-height: 2.4rem
+    }
+
+    #popup_wrapper .Subscribe_popFooter .pop_inner .description {
+        font-size: 1.4rem;
+        letter-spacing: -0.03em;
+        margin-bottom: 3rem
+    }
+
+    #popup_wrapper .Subscribe_popFooter .pop_inner .checkbox {
+        margin-top: 2.4rem
+    }
+
+    #popup_wrapper .Subscribe_popFooter .pop_inner .sub-btn {
+        margin-top: 4rem
+    }
+
+    #popup_wrapper .popup_submittedFooter .pop_inner,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner,#popup_wrapper .popup_submission_failedFooter .pop_inner {
+        width: 30rem
+    }
+
+    #popup_wrapper .popup_submittedFooter .pop_inner .pop_con .pop_title,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .pop_title,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .pop_title {
+        margin-bottom: 2rem
+    }
+
+    #popup_wrapper .popup_submittedFooter .pop_inner .pop_con .pop_title h3.font_contents_title_2,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .pop_title h3.font_contents_title_2,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .pop_title h3.font_contents_title_2 {
+        font-size: 1.8rem;
+        line-height: 3.6rem;
+        letter-spacing: -0.01em
+    }
+
+    #popup_wrapper .popup_submittedFooter .pop_inner .pop_con .description,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .description,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .description {
+        letter-spacing: -0.03em;
+        margin-bottom: 2.4rem
+    }
+
+    #popup_wrapper .popup_submittedFooter .pop_inner .pop_con .description span,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .description span,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .description span {
+        font-weight: 600
+    }
+
+    #popup_wrapper .popup_submittedFooter .pop_inner .pop_con .share_btn,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .share_btn,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .share_btn {
+        font-size: 1.6rem;
+        margin-bottom: 1.6rem;
+        cursor: pointer
+    }
+
+    #popup_wrapper .popup_submittedFooter .pop_inner .pop_con .share_btn::after,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .share_btn::after,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .share_btn::after {
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        background: url("../../../../../../../etc.clientlibs/hankooktire/clientlibs/clientlib-base/resources/img/common/icon_share.svg");
+        background-size: contain;
+        display: flex;
+        margin-left: .6rem
+    }
+
+    #popup_wrapper .popup_submittedFooter .pop_inner .pop_con .share_txt,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .share_txt,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .share_txt {
+        font-size: 1.4rem;
+        margin-bottom: 3.2rem
+    }
+
+    #popup_wrapper .popup_submittedFooter .pop_inner .pop_con .share_txt_complete,#popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .share_txt_complete,#popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .share_txt_complete {
+        font-size: 1.4rem;
+        margin-bottom: 3.2rem
+    }
+}
+
+html[dir=rtl] .gns .gns-input button:after {
+    margin-left: 0
+}
+
+html[dir=rtl] #popup_wrapper .Subscribe_popFooter .pop_inner .popup_email_box label {
+    left: inherit
+}
+
+html[dir=rtl] #popup_wrapper .Subscribe_popFooter .pop_inner .checkbox>label {
+    text-align: right
+}
+
+html[dir=rtl] #popup_wrapper .Subscribe_popFooter .pop_inner .Validation {
+    text-align: right
+}
+
+html[dir=rtl] #popup_wrapper .popup_submittedFooter .pop_inner .pop_con .share_btn::after,html[dir=rtl] #popup_wrapper .popup_duplicate_submissionFooter .pop_inner .pop_con .share_btn::after,html[dir=rtl] #popup_wrapper .popup_submission_failedFooter .pop_inner .pop_con .share_btn::after {
+    margin-left: 0;
+    margin-right: .6rem
+}
